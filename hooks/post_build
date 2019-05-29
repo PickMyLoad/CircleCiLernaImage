@@ -1,0 +1,4 @@
+#!/bin/sh
+LERNA_VERSION=`lerna --version`
+docker tag $IMAGE_NAME $DOCKER_REPO:$LERNA_VERSION
+docker push $DOCKER_REPO:$SOURCE_COMMIT
